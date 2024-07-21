@@ -323,10 +323,6 @@ button {
   max-width: 200px;
 }
 
-button.correct {
-  //background-color: green;
-}
-
 button.incorrect {
   color: white;
   background-color: red;
