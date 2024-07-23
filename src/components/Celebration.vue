@@ -1,6 +1,6 @@
 <template>
   <div ref="celebration" class="celebration">
-    🎉 Correct! 🎉
+    <b>{{ flag.name }}</b><br>is correct!
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 import party from 'party-js';
 
 export default {
+  props: ["flag"],
   mounted() {
     this.playAnimation();
   },
@@ -30,5 +31,6 @@ export default {
 .celebration {
   font-size: 2rem;
   color: green;
+  text-align: center;
 }
 </style>
